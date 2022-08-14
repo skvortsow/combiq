@@ -148,3 +148,91 @@ body {
 button:active {
     background-color: #852459;
 }
+
+.about {
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+}
+
+.title--purple-polygon:before {
+    content: '';
+    background: url(./img/purple\ polygon.svg) center center / cover no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -66px;
+}
+
+.about__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about__item {
+    background: rgba(82, 82, 82, 0.6);
+    backdrop-filter: blur(30px);
+    border: 2px solid #BDBDBD;
+    border-radius: 40px;
+    padding: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    height: 446px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.item__img-div {
+    width: 202px;
+    height: 232px;
+    background-image: url(./img/about\ lamp\ off.png);
+    transition: .3s;
+    position: relative;
+}
+
+.item__img-div:before {
+    content: '';
+    width: 115%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(50px);
+    transform: translate(-45%, -7%);
+    transition: .3s;
+}
+
+.about__item:first-child:hover .item__img-div {
+    background-image: url(./img/about\ lamp\ on.png);
+}
+
+.about__item:first-child:hover .item__img-div:before {
+    background-color: #F8C43A;
+}
+
+.about__item:nth-child(-n+2) {
+    margin-bottom: 25px;
+}
+
+.small-card {
+    width: 30%;
+}
+
+.large-card {
+    width: 68%;
+}
+
+.bold {
+    font-weight: 700;
+}
