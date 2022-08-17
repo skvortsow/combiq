@@ -121,6 +121,7 @@ section {
     border: 2px solid #BDBDBD;
     border-radius: 40px;
     padding: 60px 45px;
+    text-align: left;
 }
 
 .hero__content {
@@ -276,6 +277,7 @@ button:active {
     flex-basis: auto;
     overflow: hidden;
     transition: .3s;
+    background: rgba(82, 82, 82, 0.6);
 }
 
 .tests__item:hover {
