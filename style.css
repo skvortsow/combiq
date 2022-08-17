@@ -39,10 +39,15 @@ body {
     color: white;
 }
 
+section {
+    padding: 100px;
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;
     width: 1490px;
+    text-align: center;
 }
 
 .header {
@@ -158,13 +163,16 @@ button:active {
     display: inline-block;
 }
 
-.title--purple-polygon:before {
+.title--polygon:before {
     content: '';
-    background: url(./img/purple\ polygon.svg) center center / cover no-repeat;
     width: 40px;
     height: 40px;
     position: absolute;
     left: -66px;
+}
+
+.purple-polygon:before {
+    background: url(./img/purple\ polygon.svg) center center / cover no-repeat;
 }
 
 .about__list {
@@ -213,6 +221,14 @@ button:active {
     transition: .3s;
 }
 
+.item__img--with-cube {
+    position: relative;
+    display: block;
+    background: url(./img/animated\ cubess\ bg.svg) center center / cover no-repeat;
+    height: 255px;
+    padding: 0px 15px;
+}
+
 .about__item:first-child:hover .item__img-div {
     background-image: url(./img/about\ lamp\ on.png);
 }
@@ -235,4 +251,90 @@ button:active {
 
 .bold {
     font-weight: 700;
+}
+
+.blue-polygon:before {
+    background: url(./img/blue\ polygon.svg) center center / cover no-repeat;
+}
+
+.tests__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.tests__item {
+    border-radius: 30px;
+    border: 2px #BDBDBD solid;
+    padding: 25px 42px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    gap: 39px;
+    position: relative;
+    flex-basis: auto;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.tests__item:hover {
+    background-color: #F1F1F1;
+    color: black;
+}
+
+.tests__item:hover .tag {
+    border: 1px solid black;
+}
+
+.test__item--raven:hover {
+    border: 2px #35D0BA solid;
+}
+
+.tests__item--soon {
+    color: #BDBDBD;
+}
+
+.tests__item--soon img {
+    filter: saturate(0);
+}
+
+.tests__item--soon:after {
+    content: 'СКОРО СКОРО СКОРО';
+    position: absolute;
+    transform: rotate(-43deg);
+    right: -15%;
+    bottom: 30%;
+    font-weight: 800;
+    font-size: 39px;
+    padding: 10px 30px;
+    background-color: #f8c43a;
+    color: black;
+}
+
+.tests__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.tests__header {
+    font-weight: 700;
+    font-size: 40px;
+    width: 304px;
+}
+
+.tests__text {
+    font-size: 24px;
+    max-width: 230px;
+}
+
+.tag {
+    font-weight: 400;
+    font-size: 24px;
+    padding: 10px 14px;
+    border: 1px #BDBDBD solid;
+    border-radius: 100px;
 }
