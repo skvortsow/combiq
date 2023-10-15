@@ -145,6 +145,7 @@ section {
     background-color: #35D0BA;
     border-radius: 20px;
     transition: .3s;
+    width: min-content;
 }
 
 .button:hover {
@@ -174,6 +175,14 @@ button:active {
 
 .purple-polygon:before {
     background: url(./img/purple\ polygon.svg) center center / cover no-repeat;
+}
+
+.yellow-polygon:before {
+    background: url(./img/yellow\ polygon.svg) center center / cover no-repeat;
+}
+
+.green-polygon:before {
+    background: url(./img/green\ polygon.svg) center center / cover no-repeat;
 }
 
 .about__list {
@@ -339,4 +348,201 @@ button:active {
     padding: 10px 14px;
     border: 1px #BDBDBD solid;
     border-radius: 100px;
+}
+
+.questions__tabs {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.questions__header-list {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+.questions__header-item {
+    border-radius: 15px; 
+    border: 2px solid #fffefe99;
+    background: rgba(82, 82, 82, 0.6);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    text-align: left;
+    gap: 43px;
+}
+
+.questions__header-item--active {
+    border-color: #F8C43A;
+}
+
+.questions__header-title {
+    max-width: 185px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.questions__header-img {
+    width: 62px;
+    height: 62px;
+}
+
+.questions__tabs-item {
+    display: none;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.questions__tabs-item--active {
+    display: flex;
+}
+
+.questions__tabs-card {
+    padding: 25px;
+    border: solid 2px #F8C43A;
+    display: flex;
+    gap: 25px;  
+    flex-direction: column;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.results__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.results__item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.results__grade {
+    font-weight: 700;
+    font-size: 24px;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.results__grade--blue {
+    background-image: url('./img/results\ blue.png');
+}
+
+.results__grade--turquoise {
+    background-image: url('./img/results\ turquoise.png');
+}
+
+.results__grade--purple {
+    background-image: url('./img/results\ purple.png');
+}
+
+.results__grade--yellow {
+    background-image: url('./img/results\ yellow.png');
+}
+
+.results__content {
+    padding: 30px 50px;
+    border-radius: 30px;
+    border: 2px #BDBDBD solid;
+    background: rgba(82, 82, 82, 0.6);
+    text-align: left;
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+}
+
+.results__title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.results__text {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.support__banner {
+    background-color: #3573D0;
+    border-radius: 40px;
+    padding: 40px 90px;
+    display: flex;
+}
+
+.support__content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 30px;
+    max-width: 470px;
+}
+
+.support__title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.support__subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    color: black;
+}
+
+.support__decorer-list {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.support__decorer-item {
+    background: url('./img/support\ decorer.png') center center / contain no-repeat;
+    width: 23px;
+    height: 23px;
+}
+
+.footer {
+    border-top: 1px solid #6C6C6C;
+    padding: 80px 0;
+}
+
+.container--footer {
+    display: flex;
+    gap: 49px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link-list {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__link-item {
+    padding: 9px 16px;
+}
+
+.footer__link {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 12px;
+}
+
+.footer__link:before {
+    content: url('./img/footer\ polygon.svg');
+    width: 24px;
+    height: 24px;
 }

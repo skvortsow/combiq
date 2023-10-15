@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
 </head>
 <body>
     <header class="header">
@@ -135,6 +136,174 @@
                 </ul>
             </div>
         </section>
+        <section class="questions">
+            <div class="container">
+                <h2 class="title title--polygon yellow-polygon">Частые вопросы</h2>
+                <div class="questions__tabs">
+                    <ul class="questions__header-list">
+                        <li class="questions__header-item questions__header-item--active" onclick="changeActiveTab(0)">
+                            <div class="questions__header-title">Как подготовиться к тесту</div>
+                            <img src="./img/3d-fluency-pencil-and-ruler 1.png" alt="" class="questions__header-img">
+                        </li>
+                        <li class="questions__header-item" onclick="changeActiveTab(1)">
+                            <div class="questions__header-title">Какой тест выбрать?</div>
+                            <img src="./img/question-mark.png" alt="" class="questions__header-img">
+                        </li>
+                        <li class="questions__header-item" onclick="changeActiveTab(2)">
+                            <div class="questions__header-title">Как развить интеллект?</div>
+                            <img src="./img/brain.png" alt="" class="questions__header-img">
+                        </li>
+                    </ul>
+                    <div class="questions__tabs-list">
+                        <ul class="questions__tabs-item questions__tabs-item--active">
+                            <li class="questions__tabs-card">
+                                <img src="./img/sofa.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Создайте для себя максимально комфортные условия. Подберите удобный стул, обувь и освещение. Приготовьте бутылку с водой, чтобы не отвлекаться в процессе.</p>
+                            </li>
+                            <li class="questions__tabs-card">
+                                <img src="./img/brokkoli.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Мозг работает гораздо лучше после полноценного 8-ми часового сна и при правильном питании. Не голодайте и не переедайте перед тестом.</p>
+                            </li>
+                            <li class="questions__tabs-card">
+                                <img src="./img/ok-hand.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Если вы чувствуете волнение — попробуйте применить психологические техники: медленное глубокое дыхание, визуализацию.</p>
+                            </li>
+                            <li class="questions__tabs-card">
+                                <img src="./img/bird.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Помните: это просто тест, созданный людьми со своими взглядами на вопрос интеллекта. Он не может описать всю многогранность вашей личности.</p>
+                            </li>
+                        </ul>
+                        <ul class="questions__tabs-item">
+                            <li class="questions__tabs-card">
+                                <img src="./img/brain 2.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Каждый из приведённых на сайте тестов отражает одну из точек зрения на проблему измерения интеллекта.</p>
+                            </li>
+                            <li class="questions__tabs-card">
+                                <img src="./img/puzzle.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Некоторые из тестов включают в себя многоступенчатые субтесты для всесторонней проверки. Другие — просты и визуально наглядны.</p>
+                            </li>
+                            <li class="questions__tabs-card">
+                                <img src="./img/desk.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Каждый тест содержит подробное описание и справку. Изучите их, прежде чем приступить к прохождению.</p>
+                            </li>
+                            <li class="questions__tabs-card">
+                                <img src="./img/Books.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Для всех новичков мы советуем начать с теста Равена и при желании выбрать любой следующий тест. Объективный результат можно получить последовательно пройдя несколько тестов разной направленности.</p>
+                            </li>
+                        </ul>
+                        <ul class="questions__tabs-item">
+                            <li class="questions__tabs-card">
+                                <img src="./img/mahjong.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Тренируйте память. От того насколько хорошо вы способны запоминать, зависит множество интеллектуальных процессов. Отлично подойдёт заучивание стихов, песен или монолгов. </p>
+                            </li>
+                            <li class="questions__tabs-card">
+                                <img src="./img/Abacus.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Решайте математические задачи. Для этого можно купить или скачать специальные задачники. Лёгкие задачи лучше решать в уме, а более сложные - на листе бумаги.</p>
+                            </li>
+                            <li class="questions__tabs-card">
+                                <img src="./img/Bookmark tabs.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Читайте и пишите сами. Одна из важных составляющих IQ - вербальный интеллект. полезным будет ведение дневников, блогов или написание сочинений на заданную тему.</p>
+                            </li>
+                            <li class="questions__tabs-card">
+                                <img src="./img/pic.png" alt="" class="questions__tabs-img">
+                                <p class="questions__tabs-text">Тут обязательно появится текст, когда мы его сочиним!</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="results">
+            <div class="container">
+                <h2 class="title title--polygon green-polygon">Частые вопросы</h2>
+                <ul class="results__list">
+                    <li class="results__item">
+                        <div class="results__grade results__grade--purple">0-50</div>
+                        <div class="results__content">
+                            <div class="results__title">Умственная отсталость</div>
+                            <div class="results__text">Люди с тяжелой формой умственной отсталости не поддаются обучению и воспитанию, имеют уровень интеллектуального развития до 20 баллов. Они находятся под опекой других людей, так как не могут о себе позаботиться, и живут в собственном мире.<br><br> Около 2 % людей на Земле имеют уровень интеллектуального развития от 21 до 50 баллов, они страдают слабоумием, средней степенью умственной отсталости. Такие люди не могут обучаться, однако способны позаботится о себе, но чаще всего имеют опекунов.</div>
+                        </div>
+                    </li>
+                    <li class="results__item">
+                        <div class="results__grade results__grade--blue">51-80</div>
+                        <div class="results__content">
+                            <div class="results__title">Низкий уровень интеллекта</div>
+                            <div class="results__text">Около 7% людей имеют легкую форму умственной отсталости и уровень IQ от 51 до 70. Они обучаются в специальных заведениях, однако способны позаботится о себе сами, и являются относительно полноценными членами общества.<br><br>
+                                Еще одна десятая часть населения имеет уровень IQ от 71 до 80, это уже признак умственной отсталости меньшей степени. Люди с таким результатом в основном посещают специальные школы, но могут закончить и обычную начальную школу со средними отметками.</div>
+                        </div>
+                    </li>
+                    <li class="results__item">
+                        <div class="results__grade results__grade--blue">81-100</div>
+                        <div class="results__content">
+                            <div class="results__title">Уровень интеллекта ниже среднего</div>
+                            <div class="results__text">Десятая часть населения обладает уровнем интеллекта ниже среднего. Их результаты прохождения теста на IQ составляют от 81 до 90. Эти люди обычно нормально учатся в школе, однако чаще всего не получают высшего образования. Работать они могут в сфере физического труда, в отраслях, не требующих применения интеллектуальных способностей.<br><br>
+                                Если вы прошли тест, а результат оказался менее 100 баллов, не стоит расстраиваться, ведь этот средний показатель у четверти населения. Люди с такими показателями интеллекта хорошо учатся в школе и ВУЗах, они устраиваются на работу в сфере менеджмента среднего звена и других специальностей.</div>
+                        </div>
+                    </li>
+                    <li class="results__item">
+                        <div class="results__grade results__grade--turquoise">100-120</div>
+                        <div class="results__content">
+                            <div class="results__title">Средний уровень интеллекта</div>
+                            <div class="results__text">Если вы думаете, что средний уровень iq составляет примерно 110 баллов, то вы ошибаетесь. Этот показатель относится к интеллекту выше среднего. Люди с результатами тестов от 111 до 120 обычно трудолюбивы и тянутся к знаниям всю свою жизнь.<br><br>
+                                У четверти населения показатели интеллекта составляют от 101 до 110 – это средний уровень IQ, позволяющий добиться определенных высот. Кстати, интеллект поддается развитию, подобно тому, как мышечную массу можно накачать, точно также можно заниматься и фитнессом для мозга.
+                                </div>
+                        </div>
+                    </li>
+                    <li class="results__item">
+                        <div class="results__grade results__grade--yellow">121-150</div>
+                        <div class="results__content">
+                            <div class="results__title">Высокий уровень интеллекта</div>
+                            <div class="results__text">Интеллектуальный уровень выше среднего показывает всего 6 % населения. Таких людей видно в ВУЗах, так как они являются обычно отличниками по всем дисциплинам, успешно заканчивают университеты, реализуют себя в разнообразных профессиях и достигают высоких результатов. Люди с показателями IQ свыше 140 – это обладатели отличных творческих способностей, которые достигли успехов в разных научных отраслях. Среди известных личностей с результатом теста интеллектуальных способностей от 140 – Билл Гейтс и Стивен Хоукинг.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="support">
+            <div class="container">
+                <div class="support__banner">
+                    <div class="support__content">
+                        <span class="support__title">Нравится проект? Поддержи нас!</span>
+                        <ul class="support__decorer-list">
+                            <li class="support__decorer-item"></li>
+                            <li class="support__decorer-item"></li>
+                            <li class="support__decorer-item"></li>
+                        </ul>
+                        <span class="support__subtitle">Чтобы мы могли развивать проект быстрее.</span>
+                        <a href="" class="button">Поддержать</a>
+                    </div>
+                    <img src="./img//support.png" alt="" class="support__img">
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container container--footer">
+            <a href="" class="footer__logo-link">
+                <img src="./img/footer logo.png" alt="" class="footer__logo">
+            </a>
+            <ul class="footer__link-list">
+                <li class="footer__link-item">
+                    <a href="" class="footer__link">Что такое IQ?</a>
+                </li>
+                <li class="footer__link-item">
+                    <a href="" class="footer__link">Тесты</a>
+                </li>
+                <li class="footer__link-item">
+                    <a href="" class="footer__link">Результаты</a>
+                </li>
+                <li class="footer__link-item">
+                    <a href="" class="footer__link">Вопросы и поддержка</a>
+                </li>
+            </ul>
+            <div class="footer__contacts">
+                Создано командой <b>LaserCode</b>
+                <br>
+                Связаться с нами: <a href="mailto:inbox.lasercode@gmail.com" class="footer__contacts-email">inbox.lasercode@gmail.com</a>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="./index.js"></script>
 </html>
